@@ -6,7 +6,7 @@ Prerequisite
 2. creating an account in https://hub.docker.com/
 
 
-
+Steps to perform
 1.	Navigate to the root folder 
 2.	Enter docker-compose up
 3.  Access localhost or localhost:80
