@@ -1,5 +1,10 @@
 # jenkinstutorial
 
+Prerequisite
+
+installation of docker
+
+
 
 1.	Navigate to the root folder 
 2.	Enter docker-compose up
@@ -26,5 +31,41 @@ jenkins_1  | *************************************************************
 5. Select "Install suggested plugins"
 6. Create Admin user with the relevant details
 7. Proceed to start using jenkins
+
+Before Creating a new Project
+1. Navigate to Manage Jenkins -> Global Tool configuration and add JDK , Maven etc to install automatically
+2. Create an account in oracle `https://login.oracle.com/oaam_server/login.do`
+3. Provide the credentials in jenkins for JDK installation
+
+Create a new Project
+1. Create new maven project
+2. Enter the name
+3. Provide a git URL - `https://github.com/suhaimsyed/graphqltutorial.git` in scm of your choice
+4. Add root pom.xml in build section
+5. Build the project
+
+Export the project to dsl
+1. Click on the export xml to dsl from the jenkins homepage
+
+Make changes to the dsl 
+```
+mavenJob('dsl2') {
+    scm {
+		git {
+			remote {
+				github("suhaimsyed/graphqltutorial", "https")
+			}
+			branch("*/master")
+		}
+	}
+    goals('clean verify')
+}
+```
+
+Execute the dsl as a build task
+
+A new Job will be created with dsl2 as name
+
+Execute the job and see the result
 
   
