@@ -2,7 +2,8 @@
 
 Prerequisite
 
-installation of docker
+1. installation of docker
+2. creating an account in https://hub.docker.com/
 
 
 
