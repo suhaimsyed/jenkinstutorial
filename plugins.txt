@@ -1,4 +1,4 @@
-junit: 1.27
+junit:1.27
 script-security:1.57
 cucumber-testresult-plugin:0.10.1
 pam-auth:1.5
@@ -81,7 +81,6 @@ workflow-basic-steps: 2.12
 ansicolor: 0.5.3
 jackson2-api: 2.9.7.1
 mailer: 1.22
-junit: 1.26.1
 multiple-scms: 0.6
 docker-workflow: 1.17
 artifactory: 2.16.2
