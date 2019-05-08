@@ -40,8 +40,10 @@ Before Creating a new Project
 
 Add new Plugin
 
-Maven Integration plugin
+1.Maven Integration plugin
 *This plug-in provides, for better and for worse, a deep integration of Jenkins and Maven: Automatic triggers between projects depending on SNAPSHOTs, automated configuration of various Jenkins publishers (Junit, ...).'
+2.XML Job to Job DSL Plugin
+Use this plugin to convert your jobs into DSL Groovy scripts
 
 Create a new Project
 1. Create new maven project
