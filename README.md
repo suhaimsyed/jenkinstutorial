@@ -38,6 +38,11 @@ Before Creating a new Project
 2. Create an account in oracle `https://login.oracle.com/oaam_server/login.do`
 3. Provide the credentials in jenkins for JDK installation
 
+Add new Plugin
+
+Maven Integration plugin
+*This plug-in provides, for better and for worse, a deep integration of Jenkins and Maven: Automatic triggers between projects depending on SNAPSHOTs, automated configuration of various Jenkins publishers (Junit, ...).'
+
 Create a new Project
 1. Create new maven project
 2. Enter the name
